@@ -169,7 +169,7 @@ function nextTurn() {
 }
 
 function enemyAttack() {
-    let enemyDamage = Math.floor(Math.random()*200) + 200;
+    let enemyDamage = Math.floor(Math.random()*201) + 200;
 
     let totalDefense = 0;
 
