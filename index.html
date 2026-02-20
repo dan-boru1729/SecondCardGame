@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Second Card Game</title>
+    <style>
+        .card {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            width: 150px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>カードゲーム</h1>
+    <button onclick="resetGame()">最初から</button>
+    <button id="drawButton" onclick="startGame()">10枚引く</button>
+    <p>あなたのHP: <span id="playerHP">1000</span></p>
+    <p>CPUのHP: <span id="enemyHP">1000</span></p>
+
+    <button onclick="confirmSelection()">選択確定</button>
+
+    <div id="cardArea"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
