@@ -141,7 +141,7 @@ function confirmSelection() {
     document.getElementById("playerHP").textContent = playerHP;
     document.getElementById("enemyHP").textContent = enemyHP;
 
-    alert(`与ダメージ: ${totalDamage} (倍率 x${buff})`);
+    alert(`与ダメージ: ${totalDamage} (倍率 x${buff})\n回復: ${totalHeal}`);
 
     if (enemyHP <= 0) {
         alert("勝利!");
