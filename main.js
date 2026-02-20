@@ -169,7 +169,7 @@ function nextTurn() {
 }
 
 function enemyAttack() {
-    let enemyDamage = Math.floor(Math.random()*201) + 200;
+    let enemyDamage = Math.floor(Math.random()*151) + 200;
 
     let totalDefense = 0;
 
@@ -180,6 +180,7 @@ function enemyAttack() {
     let finalDamage = Math.max(0, enemyDamage - totalDefense);
 
     playerHP -= finalDamage;
+    playerHP = Math.max(playerHP, 0);
 
     document.getElementById("playerHP").textContent = playerHP;
 
