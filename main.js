@@ -131,8 +131,8 @@ function confirmSelection() {
     totalSelfDamage *= buff;
 
     enemyHP -= totalDamage;
-    playerHP += totalHeal;
     playerHP -= totalSelfDamage;
+    playerHP += totalHeal;
 
     playerHP = Math.min(playerHP, MaxHP);
     enemyHP = Math.max(enemyHP, 0);
